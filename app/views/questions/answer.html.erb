@@ -1,0 +1,12 @@
+<div class="banner"><h1>Coaching Page</h1></div>
+<div class="main">
+  <div>
+    <p><strong>Question:</strong> <%= @question %></p>
+    <p><em>- You</em>
+  </div>
+  <div>
+    <p><strong>Answer:</strong> <%= @answer %></p>
+    <p><em>- Coach</em>
+  </div>
+  <%= link_to "Ask a new question", "#{ask_path}?question=#{@question}" %>
+</div>
